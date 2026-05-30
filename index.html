@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV - Adolfo Ángel Camacho Suárez</title>
+  <style>
+    :root {
+      --primary: #0f172a;
+      --accent: #2563eb;
+      --text: #334155;
+      --text-light: #64748b;
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --border: #e2e8f0;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      padding: 2rem;
+    }
+    .container {
+      max-width: 820px;
+      margin: 0 auto;
+      background: var(--card);
+      border-radius: 12px;
+      box-shadow: 0 10px 15px -3px rgba(0,0,0,0.08);
+      overflow: hidden;
+    }
+    header {
+      background: linear-gradient(135deg, var(--primary) 0%, #1e293b 100%);
+      color: white;
+      padding: 2.5rem 2rem;
+    }
+    h1 { font-size: 2.2rem; font-weight: 700; letter-spacing: -0.5px; margin-bottom: 0.25rem; }
+    .subtitle { color: #93c5fd; font-size: 1rem; margin-bottom: 1.5rem; font-weight: 500; }
+    .contact-grid {
+      display: flex; flex-wrap: wrap; gap: 0.75rem 2rem;
+      font-size: 0.9rem; color: #cbd5e1;
+    }
+    .contact-item { display: flex; align-items: center; gap: 0.4rem; }
+    main { padding: 2rem; }
+    .section { margin-bottom: 2rem; }
+    h2 {
+      color: var(--primary);
+      font-size: 1.25rem;
+      font-weight: 700;
+      border-bottom: 2px solid var(--accent);
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
+      display: flex; align-items: center; gap: 0.5rem;
+    }
+    .exp-item { margin-bottom: 1.75rem; border-left: 3px solid var(--border); padding-left: 1rem; transition: border-color 0.3s; }
+    .exp-item:hover { border-left-color: var(--accent); }
+    .exp-header { display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; }
+    .exp-title { font-weight: 700; color: var(--primary); font-size: 1.1rem; }
+    .exp-date { color: var(--text-light); font-size: 0.85rem; background: #f1f5f9; padding: 0.2rem 0.5rem; border-radius: 4px; }
+    .exp-subtitle { color: var(--accent); font-weight: 600; margin: 0.25rem 0 0.5rem; }
+    ul { padding-left: 1.2rem; margin-top: 0.25rem; }
+    li { margin-bottom: 0.35rem; color: #475569; }
+    .skills-grid { display: flex; flex-wrap: wrap; gap: 0.6rem; }
+    .skill-tag {
+      background: #e0f2fe; color: #0369a1; padding: 0.45rem 0.9rem;
+      border-radius: 20px; font-size: 0.85rem; font-weight: 600;
+      transition: transform 0.2s, background 0.2s;
+    }
+    .skill-tag:hover { transform: translateY(-2px); background: #bae6fd; }
+    .lang-item { display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem; }
+    .lang-bar { background: var(--border); height: 6px; border-radius: 4px; width: 100%; margin-top: 0.3rem; }
+    .lang-fill { background: var(--accent); height: 100%; border-radius: 4px; width: 20%; }
+    .personal-info { display: flex; gap: 1.2rem; flex-wrap: wrap; color: var(--text-light); font-size: 0.9rem; margin-top: 1rem; }
+    .print-btn {
+      position: fixed; bottom: 2rem; right: 2rem;
+      background: var(--accent); color: white; border: none;
+      padding: 0.9rem 1.3rem; border-radius: 50px; cursor: pointer;
+      font-weight: 600; box-shadow: 0 4px 12px rgba(37,99,235,0.3);
+      transition: all 0.2s; font-size: 0.9rem;
+    }
+    .print-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 16px rgba(37,99,235,0.4); }
+    @media print {
+      body { background: white; padding: 0; }
+      .container { box-shadow: none; border-radius: 0; max-width: 100%; margin: 0; }
+      .print-btn { display: none; }
+      header { background: var(--primary) !important; -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+      .skill-tag { border: 1px solid #cbd5e1; }
+      .exp-item:hover { border-left-color: var(--border); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>ADOLFO ÁNGEL CAMACHO SUÁREZ</h1>
+      <div class="subtitle">Seguridad Privada • Prevención de Pérdidas • Atención al Cliente</div>
+      <div class="contact-grid">
+        <div class="contact-item">📍 Cancún, Quintana Roo</div>
+        <div class="contact-item">📞 983 339 9231</div>
+        <div class="contact-item">💬 WhatsApp: 987 103 4025</div>
+        <div class="contact-item">✉️ walkasterserverip@gmail.com</div>
+      </div>
+    </header>
+    <main>
+      <section class="section">
+        <h2>📝 Perfil Profesional</h2>
+        <p>Profesional con experiencia en seguridad privada, vigilancia patrimonial, control de accesos, prevención de robos y merma, atención al cliente y manejo de inventarios. Destaco por mi responsabilidad, disciplina, puntualidad y capacidad para trabajar bajo presión.</p>
+      </section>
+
+      <section class="section">
+        <h2>💼 Experiencia Laboral</h2>
+        <div class="exp-item">
+          <div class="exp-header">
+            <div class="exp-title">DECK RESIDENCES – DECK 12</div>
+            <div class="exp-date">01/08/2021 – 18/02/2023</div>
+          </div>
+          <div class="exp-subtitle">Seguridad Privada</div>
+          <ul>
+            <li>Vigilancia de instalaciones y áreas comunes.</li>
+            <li>Control de accesos de residentes, visitantes y proveedores.</li>
+            <li>Recorridos preventivos y elaboración de reportes.</li>
+            <li>Aplicación de protocolos de seguridad y atención a residentes.</li>
+          </ul>
+        </div>
+        <div class="exp-item">
+          <div class="exp-header">
+            <div class="exp-title">GRUPO LOCSA – BODEGA AURRERÁ COZUMEL</div>
+            <div class="exp-date">24/02/2023 – 16/08/2025</div>
+          </div>
+          <div class="exp-subtitle">Seguridad y Prevención de Pérdidas</div>
+          <ul>
+            <li>Prevención de robos, farderos y merma desconocida.</li>
+            <li>Recorridos constantes en toda la tienda.</li>
+            <li>Supervisión de áreas de alto valor: electrónica, farmacia, vinos y licores, carnes frías, juguetería y abarrotes.</li>
+            <li>Colocación y verificación de alarmas en mercancía de riesgo.</li>
+            <li>Revisión de tickets de compra, control de accesos y reporte de incidencias.</li>
+            <li>Atención al cliente y apoyo operativo.</li>
+          </ul>
+        </div>
+        <div class="exp-item">
+          <div class="exp-header">
+            <div class="exp-title">CHEDRAUI</div>
+            <div class="exp-date">[20/08/2025 - 01/02/2026]</div>
+          </div>
+          <div class="exp-subtitle">Colaborador de Salchichonería</div>
+          <ul>
+            <li>Atención al cliente y recomendación de productos.</li>
+            <li>Cambio de precios y etiquetado.</li>
+            <li>Manejo higiénico de alimentos.</li>
+            <li>Uso de rebanadoras y básculas.</li>
+            <li>Control de inventario y rotación PEPS.</li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>🛠️ Habilidades Clave</h2>
+        <div class="skills-grid">
+          <span class="skill-tag">Seguridad Patrimonial</span>
+          <span class="skill-tag">Control de Accesos</span>
+          <span class="skill-tag">Prevención de Pérdidas</span>
+          <span class="skill-tag">Atención al Cliente</span>
+          <span class="skill-tag">Trabajo en Equipo</span>
+          <span class="skill-tag">Elaboración de Reportes</span>
+          <span class="skill-tag">Control de Inventarios</span>
+          <span class="skill-tag">Responsabilidad y Puntualidad</span>
+        </div>
+      </section>
+
+      <section class="section">
+        <h2>🌐 Idiomas & Datos Personales</h2>
+        <div class="lang-item">
+          <span>Inglés</span>
+          <span style="color: var(--text-light); font-size: 0.9rem;">Nivel Básico (~20%)</span>
+        </div>
+        <div class="lang-bar"><div class="lang-fill"></div></div>
+        <div class="personal-info">
+          <span>📅 24 de julio de 2005</span>
+          <span>👤 Hombre • Soltero</span>
+        </div>
+      </section>
+    </main>
+  </div>
+  <button class="print-btn" onclick="window.print()">🖨️ Guardar como PDF</button>
+  <script>
+    // Animación sutil de entrada para una presentación profesional
+    document.addEventListener('DOMContentLoaded', () => {
+      const container = document.querySelector('.container');
+      container.style.opacity = '0';
+      container.style.transform = 'translateY(15px)';
+      container.style.transition = 'all 0.5s ease-out';
+      requestAnimationFrame(() => {
+        container.style.opacity = '1';
+        container.style.transform = 'translateY(0)';
+      });
+    });
+  </script>
+</body>
+</html>
